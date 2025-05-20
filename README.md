@@ -4,6 +4,10 @@ This repo contains my JavaScript solutions for LeetCode problems — part of my 
 
 ## ✅ Progress
 
-- Day 01: Two Sum ✅
-- Day 02: Palindrome Number ✅
-- Day 03: Merge Two Sorted Lists ✅
+- Day 01: Create Hello World Function ✅
+- Day 02: Counter ✅
+- Day 03: To Be Or Not To Be ✅
+- Day 04: Counter II ✅
+- Day 05: Apply Transform Over Each Element in Array ✅
+- Day 06: Filter Elements from Array ✅
+-
