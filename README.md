@@ -15,7 +15,8 @@ This repository contains my JavaScript solutions to LeetCode's **30-Day JavaScri
 | 05  | Apply Transform Over Each Element in Array | :white_check_mark:       |
 | 06  | Filter Elements from Array                 | :white_check_mark:       |
 | 07  | Array Reduce Transformation                | :white_check_mark:       |
-| 08  | _Coming soon..._                           | :hourglass_flowing_sand: |
+| 08  | Function composition                       | :white_check_mark:       |
+| 09  | _Coming soon..._                           | :hourglass_flowing_sand: |
 
 ---
 
