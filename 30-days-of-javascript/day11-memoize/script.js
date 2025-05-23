@@ -3,16 +3,25 @@
  * @return {Function}
  */
 function memoize(fn) {
-  return function (...args) {};
+  const cache = new Map();
+
+  return function (...args) {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) {
+      return cache.get(key);
+    }
+
+    const result = fn(...args);
+    cache.set(key, result);
+    return result;
+  };
 }
 
-/**
- * let callCount = 0;
- * const memoizedFn = memoize(function (a, b) {
- *	 callCount += 1;
- *   return a + b;
- * })
- * memoizedFn(2, 3) // 5
- * memoizedFn(2, 3) // 5
- * console.log(callCount) // 1
- */
+const sum = (a, b) => a + b;
+const memoizedSum = memoize(sum);
+
+console.log(memoizedSum(2, 2)); // Should call sum → 4
+console.log(memoizedSum(2, 2)); // Should use cache → 4
+console.log(memoizedSum(1, 2)); // Should call sum → 3
+console.log(memoizedSum(2, 1)); // Different input → should call sum → 3
+console.log(memoizedSum(3, 1)); // Different input → should call sum → 3
