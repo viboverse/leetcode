@@ -6,21 +6,23 @@ This repository contains my JavaScript solutions to LeetCode's **30-Day JavaScri
 
 ## 📈 Challenge Progress
 
-| Day | Challenge Title                            | Status             |
-| --- | ------------------------------------------ | ------------------ |
-| 01  | Create Hello World Function                | :white_check_mark: |
-| 02  | Counter                                    | :white_check_mark: |
-| 03  | To Be Or Not To Be                         | :white_check_mark: |
-| 04  | Counter II                                 | :white_check_mark: |
-| 05  | Apply Transform Over Each Element in Array | :white_check_mark: |
-| 06  | Filter Elements from Array                 | :white_check_mark: |
-| 07  | Array Reduce Transformation                | :white_check_mark: |
-| 08  | Function composition                       | :white_check_mark: |
-| 09  | Return Length of Arguments Passed          | :white_check_mark: |
-| 10  | Allow One Function Call                    | :white_check_mark: |
-| 11  | Memoize                                    | :white_check_mark: |
-| 12  | Add Two Promises                           | :white_check_mark: |
-| 13  | Sleep                                      | :white_check_mark: |
+| Day | Challenge Title                            | Status                   |
+| --- | ------------------------------------------ | ------------------------ |
+| 01  | Create Hello World Function                | :white_check_mark:       |
+| 02  | Counter                                    | :white_check_mark:       |
+| 03  | To Be Or Not To Be                         | :white_check_mark:       |
+| 04  | Counter II                                 | :white_check_mark:       |
+| 05  | Apply Transform Over Each Element in Array | :white_check_mark:       |
+| 06  | Filter Elements from Array                 | :white_check_mark:       |
+| 07  | Array Reduce Transformation                | :white_check_mark:       |
+| 08  | Function composition                       | :white_check_mark:       |
+| 09  | Return Length of Arguments Passed          | :white_check_mark:       |
+| 10  | Allow One Function Call                    | :white_check_mark:       |
+| 11  | Memoize                                    | :white_check_mark:       |
+| 12  | Add Two Promises                           | :white_check_mark:       |
+| 13  | Sleep                                      | :white_check_mark:       |
+| 14  | Timeout Cancellation                       | :white_check_mark:       |
+| 15  | _Coming soon..._                           | :hourglass_flowing_sand: |
 
 ---
 
