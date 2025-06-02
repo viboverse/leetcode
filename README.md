@@ -22,13 +22,13 @@ This repository contains my JavaScript solutions to LeetCode's **30-Day JavaScri
 | 12  | Add Two Promises                           | :white_check_mark:       |
 | 13  | Sleep                                      | :white_check_mark:       |
 | 14  | Timeout Cancellation                       | :white_check_mark:       |
-| 15  | Interval Cancellation                        | :white_check_mark:       |
-| 16  | Promise Time Limit                           | :white_check_mark:       |
-| 17  | _Coming soon..._                             | :hourglass_flowing_sand: |
-| 18  | _Coming soon..._                             | :hourglass_flowing_sand: |
-| 19  | _Coming soon..._                             | :hourglass_flowing_sand: |
-| 20  | Is Object Empty                              | :white_check_mark:       |
-| 21  | Chunk Array                                  | :white_check_mark:       |
+| 15  | Interval Cancellation                      | :white_check_mark:       |
+| 16  | Promise Time Limit                         | :white_check_mark:       |
+| 17  | _Coming soon..._                           | :hourglass_flowing_sand: |
+| 18  | _Coming soon..._                           | :hourglass_flowing_sand: |
+| 19  | _Coming soon..._                           | :hourglass_flowing_sand: |
+| 20  | Is Object Empty                            | :white_check_mark:       |
+| 21  | Chunk Array                                | :white_check_mark:       |
 
 ---
 
