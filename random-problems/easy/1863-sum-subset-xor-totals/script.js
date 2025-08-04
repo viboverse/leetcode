@@ -3,12 +3,11 @@
  * @return {number}
  */
 var subsetXORSum = function (nums) {
-  let sum = 0;
-  for (let num of nums) {
-    sum ^= num;
-    console.log(sum);
-  }
-  return sum;
-};
+  const dfs = (index, xor) => {
+    if (index >= nums.length) return xor;
 
-console.log(subsetXORSum([5, 1, 6]));
+    return dfs(index + 1, xor) + dfs(index + 1, xor ^ nums[index]);
+  };
+
+  return dfs(0, 0);
+};
