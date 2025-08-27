@@ -1,45 +1,25 @@
-# 🚀 LeetCode 30 Days of JavaScript
+# 🚀 LeetCode Practice (JS/TS)
 
-This repository contains my JavaScript solutions to LeetCode's **30-Day JavaScript Challenge** — a focused journey to strengthen problem-solving skills and master core JavaScript concepts.
+Short and simple: this repo is my daily practice solving LeetCode problems and small JavaScript exercises. I keep solutions minimal, readable, and focused on learning.
 
----
+## What’s inside
 
-## 📈 Challenge Progress
+- `30-days-of-javascript/`: small JS challenges and patterns.
+- `random-problems/`: LeetCode-style solutions (mostly JS/TS), grouped by difficulty.
 
-| Day | Challenge Title                            | Status                   |
-| --- | ------------------------------------------ | ------------------------ |
-| 01  | Create Hello World Function                | :white_check_mark:       |
-| 02  | Counter                                    | :white_check_mark:       |
-| 03  | To Be Or Not To Be                         | :white_check_mark:       |
-| 04  | Counter II                                 | :white_check_mark:       |
-| 05  | Apply Transform Over Each Element in Array | :white_check_mark:       |
-| 06  | Filter Elements from Array                 | :white_check_mark:       |
-| 07  | Array Reduce Transformation                | :white_check_mark:       |
-| 08  | Function composition                       | :white_check_mark:       |
-| 09  | Return Length of Arguments Passed          | :white_check_mark:       |
-| 10  | Allow One Function Call                    | :white_check_mark:       |
-| 11  | Memoize                                    | :white_check_mark:       |
-| 12  | Add Two Promises                           | :white_check_mark:       |
-| 13  | Sleep                                      | :white_check_mark:       |
-| 14  | Timeout Cancellation                       | :white_check_mark:       |
-| 15  | Interval Cancellation                      | :white_check_mark:       |
-| 16  | Promise Time Limit                         | :white_check_mark:       |
-| 17  | _Coming soon..._                           | :hourglass_flowing_sand: |
-| 18  | _Coming soon..._                           | :hourglass_flowing_sand: |
-| 19  | _Coming soon..._                           | :hourglass_flowing_sand: |
-| 20  | Is Object Empty                            | :white_check_mark:       |
-| 21  | Chunk Array                                | :white_check_mark:       |
+## How to run
 
----
+- Most files are standalone scripts. Open a file and run it with Node.
 
-## 🧠 Purpose
+```bash
+# examples (pick a script)
+node 30-days-of-javascript/day05-map/script.js
+node random-problems/easy/1-two-sum/script.ts   # if using ts-node or tsx , or compile first
+```
 
-- 📚 Reinforce JavaScript fundamentals
-- 💡 Improve algorithmic thinking
-- 🧩 Practice with real-world coding challenges
+## Notes
 
----
+- No frameworks or deps; just quick problem-solving.
+- I prefer simple, well-named variables and small helper functions.
 
-## 📁 Structure
-
-Each day's challenge is stored in its own folder.
+That’s it — just daily reps to get better at algorithms and JavaScript.
