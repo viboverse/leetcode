@@ -34,18 +34,22 @@ async function main() {
     process.exit(1);
   }
 
+  const now = new Date();
+  const helsinkiTime = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Europe/Helsinki",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  })
+    .format(now)
+    .replace(" ", " ");
+
   const template = `// ${name} — script.ts
-// created: ${new Date().toISOString()}
+// created: ${helsinkiTime}
 
-export {};
-
-// Add your solution below
-// Example:
-// function example() {
-//   return null;
-// }
-
-// console.log(example());
 `;
 
   try {
