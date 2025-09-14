@@ -336,15 +336,18 @@ console.log(defangIPaddr("1.1.1.1")); // "1[.]1[.]1[.]1"
 
 ---
 
-### **Array Methods: unshift(), push(), shift()**
+// ...existing code...
 
-**Learned:** `unshift()` adds to the beginning, `push()` adds to the end, `shift()` removes from the beginning and returns the removed element.
+### **Array Methods: unshift(), push(), shift(), pop()**
+
+**Learned:** `unshift()` adds to the beginning, `push()` adds to the end, `shift()` removes from the beginning, `pop()` removes from the end and returns the removed element.
 
 **Steps:**
 
 1. Use `unshift()` to prepend elements to the start of an array (returns new length).
 2. Use `push()` to append elements to the end of an array (returns new length).
 3. Use `shift()` to remove and return the first element (mutates original array).
+4. Use `pop()` to remove and return the last element (mutates original array).
 
 ```javascript
 // Example: Using unshift()
@@ -362,6 +365,48 @@ const arr3 = [10, 20, 30];
 const first = arr3.shift(); // Removes first element
 console.log(first); // 10
 console.log(arr3); // [20, 30]
+
+// Example: Using pop()
+const arr4 = [10, 20, 30];
+const last = arr4.pop(); // Removes last element
+console.log(last); // 30
+console.log(arr4); // [10, 20]
+```
+
+---
+
+### **Array Method: splice()**
+
+**Learned:** `splice()` can remove, replace, or insert elements at any position in an array. It mutates the original array and returns an array of removed elements.
+
+**Steps:**
+
+1. Use `splice(startIndex, deleteCount)` to remove elements.
+2. Use `splice(startIndex, deleteCount, ...itemsToAdd)` to replace/insert elements.
+3. Returns an array of removed elements (empty array if none removed).
+
+```javascript
+// Example 1: Remove elements
+const arr1 = [1, 2, 3, 4, 5];
+const removed = arr1.splice(2, 2); // Remove 2 elements starting at index 2
+console.log(removed); // [3, 4]
+console.log(arr1); // [1, 2, 5]
+
+// Example 2: Insert elements (deleteCount = 0)
+const arr2 = [1, 2, 5];
+arr2.splice(2, 0, 3, 4); // Insert 3, 4 at index 2
+console.log(arr2); // [1, 2, 3, 4, 5]
+
+// Example 3: Replace elements
+const arr3 = [1, 2, 3, 4, 5];
+arr3.splice(1, 2, "a", "b"); // Replace 2 elements starting at index 1
+console.log(arr3); // [1, 'a', 'b', 4, 5]
+
+// Example 4: Pick and remove (common LeetCode pattern)
+const arr4 = [5, 3, 8, 1];
+const picked = arr4.splice(0, 1)[0]; // Remove first element and get it
+console.log(picked); // 5
+console.log(arr4); // [3, 8, 1]
 ```
 
 ### **When to Use a Set**
