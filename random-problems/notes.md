@@ -113,18 +113,23 @@ const myObject = {
 
 ---
 
-### **Object.values() and Object.entries()**
+### **Object.keys(), Object.values(), and Object.entries()**
 
-**Learned:** Extract object data efficiently for iteration and processing. Object.values() gets all values as an array, Object.entries() gets key-value pairs as an array of [key, value] arrays.
+**Learned:** Extract object data efficiently for iteration and processing. Object.keys() gets all keys as an array, Object.values() gets all values as an array, Object.entries() gets key-value pairs as an array of [key, value] arrays.
 
 **Steps:**
 
-1. Use `Object.values()` when you only need the values from an object.
-2. Use `Object.entries()` when you need both keys and values for processing.
-3. Both methods ignore Symbol keys and return arrays suitable for iteration.
+1. Use `Object.keys()` when you only need the property names from an object.
+2. Use `Object.values()` when you only need the values from an object.
+3. Use `Object.entries()` when you need both keys and values for processing.
+4. All three methods ignore Symbol keys and return arrays suitable for iteration.
 
 ```javascript
 const user = { name: "vahab", age: 25, city: "Helsinki" };
+
+// Object.keys() - extract all keys
+const keys = Object.keys(user);
+console.log(keys); // ["name", "age", "city"]
 
 // Object.values() - extract all values
 const values = Object.values(user);
@@ -133,6 +138,12 @@ console.log(values); // ["vahab", 25, "Helsinki"]
 // Object.entries() - extract key-value pairs
 const entries = Object.entries(user);
 console.log(entries); // [["name", "vahab"], ["age", 25], ["city", "Helsinki"]]
+
+// Use case: checking if object has specific properties
+const requiredFields = ["name", "age"];
+const userKeys = Object.keys(user);
+const hasAllFields = requiredFields.every((field) => userKeys.includes(field));
+console.log(hasAllFields); // true
 
 // Use case: frequency counting
 const scores = { math: 95, science: 87, english: 92 };
@@ -159,6 +170,16 @@ const filtered = Object.entries(data)
   .filter(([key, value]) => value > 5)
   .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {});
 console.log(filtered); // { a: 10, c: 15 }
+
+// Use case: creating object from keys with default values
+const defaultSettings = Object.keys(settings).reduce(
+  (obj, key) => ({
+    ...obj,
+    [key]: false,
+  }),
+  {}
+);
+console.log(defaultSettings); // { theme: false, lang: false, notifications: false }
 ```
 
 ---
