@@ -18,6 +18,9 @@ async function main() {
     .replace(/-+/g, "-") // collapse multiple dashes
     .replace(/^-|-$/g, ""); // trim leading/trailing dashes
 
+  const slug = name.replace(/^\d+-/, "");
+  const leetcodeUrl = `https://leetcode.com/problems/${slug}`;
+
   if (!name) {
     console.error("Resulting folder name is empty after sanitization.");
     process.exit(1);
@@ -47,7 +50,8 @@ async function main() {
     .format(now)
     .replace(" ", " ");
 
-  const template = `// ${name} — script.ts
+  const template = `// ${leetcodeUrl}
+// ${name} — script.ts
 // created: ${helsinkiTime}
 
 `;
